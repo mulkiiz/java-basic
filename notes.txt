@@ -76,3 +76,5 @@ Sedangkan untuk menampilkan atau Output dari program adalah: Print;;Println
 
 Scanner
 Scanner merupakan kelas yang menyediakan fungsi-fungsi untuk membaca dan mengambil input dari pengguna. Scanner memiliki kemudahan yang dapat membaca teks, baik yang memiliki tipe data primitif maupun string.
+
+Control flow dalam bahasa Indonesia dapat diartikan sebagai aliran kendali. Maksud sebenarnya dari control flow adalah bagaimana urutan eksekusi perintah di dalam program.

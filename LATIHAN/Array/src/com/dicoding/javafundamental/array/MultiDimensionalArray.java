@@ -2,7 +2,7 @@ package com.dicoding.javafundamental.array;
 
 public class MultiDimensionalArray {
     public static void main(String[] args){
-        char[][] arrChar = new char[1][2]; //lagi - lagi penting untuk inisialisasi panjang tipe data di awal
+        char[][] arrChar = new char[2][3]; //lagi - lagi penting untuk inisialisasi panjang tipe data di awal
 
         arrChar[0] = new char[2]; //walaupun pada akhirnya panjang tipe datanya berubah
         arrChar[1] = new char[3]; //namun panjang data di sini tidak boleh melebihi inisialisasi
