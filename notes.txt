@@ -70,3 +70,9 @@ Operasi Conditional
 
 Operasi Unary
 Merupakan operator yang melakukan berbagai operasi Aritmatik yang hanya melibatkan satu operand. Operasi-operasi tersebut dapat berupa penambahan, pengurangan atau membalik suatu nilai dari bolean.
+
+Pada bahasa pemrograman Java, Basic Input-nya sudah dibekali beberapa library untuk membantu pengambilan Input berbasis teks. Beberapa di antaranya: Bufferedreader;;Scanner
+Sedangkan untuk menampilkan atau Output dari program adalah: Print;;Println
+
+Scanner
+Scanner merupakan kelas yang menyediakan fungsi-fungsi untuk membaca dan mengambil input dari pengguna. Scanner memiliki kemudahan yang dapat membaca teks, baik yang memiliki tipe data primitif maupun string.
