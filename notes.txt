@@ -16,3 +16,57 @@ Bagaimana kalau kita import beberapa class dari package yang sama? Kita bisa men
 Classpath adalah mekanisme di Java untuk menemukan class lain. Biasanya class lain tersebut berasal dari library yang berbeda atau bahkan JDK itu sendiri (kita sudah memakai class System). Jika Java tidak bisa menemukan class yang kita panggil melalui kode kita, akan terjadi error ClassNotFoundException atau NoClassDefFoundError. Error ini biasa terjadi bagi pemula Java karena biasanya belum paham konsep classpath atau ada kesalahan pengaturan classpath.
 
 Praktik yang kita lakukan barusan adalah menambahkan library (file jar) secara manual ke proyek. Cara ini sebenarnya kurang efektif jika dilakukan untuk proyek besar. Bayangkan jika kita menggunakan library A yang bergantung (dependencies) ke library B, C, D, lalu library B bergantung ke library X dan Y. Cukup bikin repot kan? Solusinya, gunakan tools seperti maven atau gradle. Pembahasan maven dan gradle di luar cakupan dari class ini. Saran kami, bacalah referensi yang ada di bawah karena kedua tools tersebut sudah menjadi standar dalam development Java.
+
+Java merupakan bahasa pemrograman yang strongly typed, maka kita tidak bisa mengabaikan tipe data. Kita harus tahu data seperti apa yang disimpan ke dalam variabel. Selain itu, Java juga bersifat statically typed, yang artinya setiap variabel harus dideklarasikan terlebih dahulu sebelum digunakan. Terdapat 2 (dua) jenis tipe data pada Java, yaitu tipe data primitive/primitif dan reference/referensi. 
+
+Tipe data primitif adalah tipe data standar yang tidak diturunkan dari objek manapun. Tipe data primitif telah ditentukan dengan kata kuncinya masing-masing. Terdapat 8 (delapan) tipe data primitif yang Java dukung, antara lain:
+1. Byte
+Tipe data integer 8 bit yang digunakan untuk menampung angka dalam range yang kecil. Nilai minimum dan maksimum dari tipe data ini adalah -128, dan 127. Tipe data byte memiliki nilai default 0. Ia digunakan untuk menghemat ruang dalam array yang besar, terutama pada bilangan bulat, karena 1 (satu) byte 4 (empat) kali lebih kecil dari tipe data int.
+2. Short
+Merupakan tipe data integer 16 bit yang digunakan untuk menampung angka dalam range menengah, yaitu antara -32,768 sampai 32,767. Sama seperti tipe sebelumnya, nilai default-nya 0. Ia bisa digunakan untuk menghemat memori seperti tipe data byte namun hanya 2 (dua) kali lebih kecil dari tipe data int.
+3. Int
+Merupakan tipe data integer 32 bit yang digunakan untuk menyimpan angka dalam range cukup besar, yakni antara -2,147,483,648 sampai 2,147,483,647 dengan nilai default 0. Jika kita tidak memperhatikan penggunaan memori, tipe data inilah yang biasanya dipakai.
+4. Long
+Merupakan tipe data integer yang lebih besar jika dibandingkan dengan tipe data int. Ukurannya 64 bit dan bisa digunakan untuk menyimpan angka dengan range antara -9,223,372,036,854,775,808 sampai 9,223,372,036,854,775,807. Tipe data long memiliki nilai default 0L.
+5. Float
+Merupakan sebuah tipe data yang bisa digunakan untuk menampung angka desimal. Nilai default-nya 0.0f.
+6. Double
+Merupakan sebuah tipe data yang mirip seperti tipe data float, namun memiliki kapasitas yang lebih besar. Nilai default-nya 0.0d.
+7. Boolean
+Merupakan sebuah tipe data yang memiliki 2 (dua) macam nilai, yaitu true dan false. Nilai default-nya false.
+8. Char
+Merupakan sebuah tipe data yang bisa digunakan untuk menampung karakter. Nilai karakter tersebut dibungkus di dalam tanda ''.
+
+Tipe Data Reference
+Tipe data reference merupakan sebuah tipe data yang merujuk ke sebuah objek atau instance dari sebuah class. Salah satu tipe data yang termasuk ke dalam tipe data reference adalah string. Tipe data string menunjuk ke instance dari class java.lang.String. 
+
+Di dalam bahasa pemrograman Java, string merupakan sebuah tipe data reference. Tipe data ini diperlakukan sebagai sebuah obyek. String adalah kumpulan beberapa karakter (char). String sendiri sebenarnya merupakan sebuah class yang terdapat dalam library Java dan digunakan untuk memanipulasi karakter. Contoh sintaks untuk mendeklarasikan sebuah string: String greeting = "Hello World!";
+
+Perlu diperhatikan bahwa kelas String bersifat final. Alhasil, kita tidak bisa mengubah nilai dari objek yang sudah kita buat. Jika kita ingin mengubah nilai tersebut, kita membutuhkan StringBuffer dan StringBuilder.
+
+Kelas String memiliki sebuah method untuk mengetahui panjang dari sebuah string, yakni method length(). Fungsi tersebut akan mengembalikan/menghasilkan sejumlah karakter dari string, contohnya:
+
+String dicoding = "dicoding";
+int length = dicoding.length();
+System.out.println(length);
+
+Kita juga bisa mengambil sebuah karakter secara spesifik dari sebuah String dengan menggunakan method charAt(int index) yang sudah tersedia dalam kelas String.
+
+String dicoding = "dicoding";
+char result = dicoding.charAt(7); //dimulai dari index 0
+System.out.println(result);
+
+Maka jika Anda menjalankan kode di atas, konsol akan menampilkan karakter urutan ke-8 dari teks tersebut, yaitu "g".
+Beberapa kumpulan method dalam kelas String: https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+
+Operator
+Operator dalam Java merupakan suatu simbol yang digunakan untuk melakukan suatu operasi tertentu (memanipulasi, mengolah) satu atau lebih variabel. Variabel yang dioperasikan disebut sebagai operand. Bahasa Java memiliki banyak operator yang dapat digunakan dan bisa dikelompokkan menjadi beberapa kategori, seperti : https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+(AAUEC)
+Operasi Assignment
+Operasi Arithmetic
+Operasi Unary
+Operasi Equality and Relational
+Operasi Conditional
+
+Operasi Unary
+Merupakan operator yang melakukan berbagai operasi Aritmatik yang hanya melibatkan satu operand. Operasi-operasi tersebut dapat berupa penambahan, pengurangan atau membalik suatu nilai dari bolean.
