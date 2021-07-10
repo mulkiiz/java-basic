@@ -1,0 +1,16 @@
+Apa yang sudah kita lakukan sebenarnya sama saja dengan bagian Pendahuluan. Bedanya, Anda meletakkan class Main di dalam package com.dicoding.javafundamental.basic. Ayo kita lanjut!
+
+Ketika setiap class diletakkan di dalam sebuah package, bagaimana cara memanggil class tertentu di antara class lain yang berbeda package-nya? Caranya adalah dengan memanggil nama package secara lengkap, kemudian diikuti nama class-nya. Hal ini biasa disebut dengan istilah Fully Qualified Name. Misalnya, fully qualified name dari class  Main yang baru saja kita buat adalah:
+
+com.dicoding.javafundamental.basic.Main
+
+Import
+Import digunakan untuk menyederhanakan pemanggilan class yang berbeda package. Alhasil, Anda tak perlu menyebutkan fully qualified name dari class yang ingin digunakan. Dari pengertian ini juga tersirat kita tak perlu juga menyebutkan fully qualified name jika dalam package yang sama.
+
+Khusus untuk class dari package java.lang, ia tidak perlu dipanggil menggunakan fully qualified name. Artinya tidak perlu menggunakan import saat memanggilnya, misalnya class java.lang.System yang kita gunakan untuk print “Hello world!”. Perhatikan bahwa kode di bawah ini:  System.out.println("Hello world!");
+
+Pada kode di atas, kita hanya memanggil class dengan nama class System tanpa nama package-nya.
+
+Bagaimana kalau kita import beberapa class dari package yang sama? Kita bisa menggunakan wildcard (simbol *) untuk menggantikan nama class-nya. Artinya, Java akan otomatis mengenali seluruh class dari package tersebut. 
+
+Classpath adalah mekanisme di Java untuk menemukan class lain. Biasanya class lain tersebut berasal dari library yang berbeda atau bahkan JDK itu sendiri (kita sudah memakai class System). Jika Java tidak bisa menemukan class yang kita panggil melalui kode kita, akan terjadi error ClassNotFoundException atau NoClassDefFoundError. Error ini biasa terjadi bagi pemula Java karena biasanya belum paham konsep classpath atau ada kesalahan pengaturan classpath.
