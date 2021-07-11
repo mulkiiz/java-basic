@@ -194,3 +194,8 @@ Transient memiliki hubungan dengan proses serialisasi (serializing). Serialisasi
 
 Synchronized
 Synchronized modifier digunakan untuk membatasi akses ke suatu variable/methods yang hanya boleh dilakukan oleh satu thread. Ketika ada 2 thread yang ingin mengakses synchronized variable/methods, maka prosesnya akan dilakukan secara serial (bergantian).
+
+Interface
+Pada bahasa pemrograman Java interface sangat mirip dengan kelas, tapi tanpa atribut kelas dan memiliki metode yang dideklarasikan tanpa isi. Deklarasi metode pada sebuah interface dapat diimplementasikan oleh kelas lain. 
+
+Interface harus dapat digunakan ke kelas lain. Cara untuk mengimplementasi interface yaitu menggunakan keyword implements pada kelas yang mengimplementasikannya. Kelas yang mengimplementasi interface (bisa lebih dari 1 interface) harus mendefinisikan isi kode semua deklarasi metode yang ada pada interface tersebut.
