@@ -254,3 +254,15 @@ Dari definisi di atas maka error exception dan unchecked exception termasuk dari
 Try-Catch 
 Kode yang rawan dengan exception kita masukkan ke dalam block try-catch. Kode yang kita masukkan ke dalam block try-catch biasa disebut sebagai protected code. Kodenya sepert ini.
 
+Finally
+Block finally adalah block yang di tambahkan di akhir block try-catch. Finally akan selalu dijalankan setelah try-catch baik terjadi exception atau tidak. Finally bermanfaat ketika kita ingin melakukan cleanup code. Cleanup code di sini maksudnya adalah de-alokasi sumber daya, Artinya semua sumber daya yang dibuka atau digunakan pada blok try seperti koneksi jaringan, database, berkas, stream, dll akan ditutup dengan menjalankan instruksi yang ditulis pada blok finally.
+
+File Navigation
+Untuk navigasi, kita bisa menggunakan objekFile yang bisa menampilkan daftar berkas dan direktori. Dengan menggunakan objek File, kita bisa membuat directory dengan menggunakan fungsi mkdir() atau mkdirs.
+
+java.util.Calendar
+Kelas yang memiliki spesifik method untuk mengkonversi waktu dan tanggal
+
+java.text.SimpleDateFormat
+Kelas yang membantu menterjemahkan format waktu dalam bentuk String ke format date time serta sebaliknya
+
