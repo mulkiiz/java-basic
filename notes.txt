@@ -130,3 +130,26 @@ Interface
 Selain inheritance, kita juga akan belajar tentang interface. Interface mirip seperti kelas, tetapi hanya berisi method signature (nama, parameter dan return).
 
 Lalu apa kegunaan Constructor? Memberikan nilai awal terhadap suatu data atau obyek dan Mengalokasikan ruang sebuah kelas dalam obyek
+
+Pada Java untuk membuat sebuah obyek terdapat 3 tahap :
+1. Declaration : mendeklarasikan nama sebuah obyek
+2. Instantiation : memerlukan sebuah perintah new untuk menciptakan obyek
+3. Initialization : inisialisasi dari sebuah obyek setelah perintah new
+
+Function
+Fungsi pada Java dideklarasikan di dalam sebuah kelas. Fungsi pada Java bertugas untuk mengembalikan nilai. Sedangkan untuk fungsi yang tidak mengembalikan nilai (void) disebut sebagai prosedur. Baik fungsi maupun prosedur di dalam suatu kelas kita sebut sebagai metode. Metode merupakan aspek yang penting di dalam Java. Dalam sebuah kelas bisa terdapat banyak metode sesuai dengan kegunaannya masing-masing.
+
+Cara membuat sebuah fungsi di dalam kelas adalah sebagai berikut :
+modifier: menunjukkan sifat yang dimiliki pada suatu fungsi seperti public, private, protected.
+returnType: merupakan nilai balik yang diberikan oleh fungsi. Apabila fungsi tidak memiliki nilai balik maka menggunakan void.
+nameOfFunction: adalah nama dari sebuah fungsi.
+parameters: bersifat opsional, Suatu fungsi dapat mempunyai banyak parameters atau pun tidak sama sekali.
+
+    public static double hitungLuas(double panjang, double lebar){
+        double luas = panjang * lebar;
+        return luas;
+    }
+
+    double hasil = hitungLuas(p, l); //memanggil fungsi
+
+Overloading adalah sebuah method yang memiliki nama method yang sama dengan method lain yang membedakan adalah parameter pada method tersebut dalam satu class. Perbedaan parameter meliputi jumlah parameter, tipe data parameter, urutan tipe data parameter.
