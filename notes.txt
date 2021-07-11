@@ -153,3 +153,12 @@ parameters: bersifat opsional, Suatu fungsi dapat mempunyai banyak parameters at
     double hasil = hitungLuas(p, l); //memanggil fungsi
 
 Overloading adalah sebuah method yang memiliki nama method yang sama dengan method lain yang membedakan adalah parameter pada method tersebut dalam satu class. Perbedaan parameter meliputi jumlah parameter, tipe data parameter, urutan tipe data parameter.
+
+contoh method pada kelas
+    void makan(){
+        System.out.println("Makan dengan menggunakan mulut..");
+    }
+contoh fungsi pada kelas
+    double getBerat() {
+        return berat;
+    }
