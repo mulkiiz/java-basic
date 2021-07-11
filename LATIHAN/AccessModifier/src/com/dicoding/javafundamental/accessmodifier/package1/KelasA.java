@@ -15,4 +15,8 @@ public class KelasA {
         int hasil = functionA() + memberA;
         return hasil;
     }
+
+    protected void methodC(){
+        System.out.println("Percobaan access modifier!!!");
+    }
 }

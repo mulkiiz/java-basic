@@ -162,3 +162,35 @@ contoh fungsi pada kelas
     double getBerat() {
         return berat;
     }
+
+Private
+Access modifier private akan membatasi akses hanya di dalam class. Private biasanya digunakan sebagai modifier dari member dan metode suatu class. 
+
+Default
+Default modifier berarti penulisan kodenya tanpa atribut modifier. Ini berlaku untuk semua kelas, member, atau fungsi yang kita tuliskan tanpa access modifier.Modifier default bisa diakses selama masih dalam satu package.
+
+Protected
+Access modifier protected bisa diakses selama masih dalam satu package. Protected memiliki sedikit perbedaan dengan default modifier. Perbedaannya adalah protected bisa diakses dari luar package. Akan tetapi, satu-satunya cara untuk akses dari luar package adalah kelas yang hendak mengakses, merupakan kelas turunannya.
+
+Public
+Access modifier public bisa kita sebut sebagai modifier global. Artinya bisa diakses dari manapun bahkan package yang berbeda.
+
+Non Access Modifier
+Java juga mengenal modifier lainnya yaitu tipe non access modifier. Ada beberapa non access modifier yaitu static, final, transient,  dan synchronize.
+Static : perlu diketahui juga bahwa static variable hanya berjumlah satu, tak  peduli berapapun obyek yang dibuat. 
+
+Static Methods
+Metode yang berdiri sendiri tanpa perlu instance dari kelas.
+
+Final
+Non access modifier kedua adalah final. Ada 3 macam penggunaan non access modifier final yaitu final variabel, final methods dan final class.
+Final Methods
+Metode yang dideklarasikan final maka tidak dapat di override oleh anak kelas.
+Final Class
+Kelas yang dideklarasikan sebagai final maka tidak bisa dijadikan sebagai induk kelas.
+
+Transient
+Transient memiliki hubungan dengan proses serialisasi (serializing). Serialisasi adalah proses konversi suatu objek menjadi byte agar dapat ditransmisikan.
+
+Synchronized
+Synchronized modifier digunakan untuk membatasi akses ke suatu variable/methods yang hanya boleh dilakukan oleh satu thread. Ketika ada 2 thread yang ingin mengakses synchronized variable/methods, maka prosesnya akan dilakukan secara serial (bergantian).
