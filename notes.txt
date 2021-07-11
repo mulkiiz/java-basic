@@ -272,3 +272,14 @@ Merupakan method bagian dari kelas System yang menampilkan waktu sekarang dalam 
 Casting
 Sering kali kita ingin mengubah suatu tipe data tertentu ke bentuk tipe data lain dalam suatu variabel. Perubahan ini disebut dengan istilah casting. 
 
+Kita dapat melakukan casting terhadap beberapa tipe data. Bagaimana jika kita akan melakukan casting dari double ke dalam bentuk string? Dengan cara mendeklarasikan variabel sebagai String dan menggunakan fungsi String.valueOf. Berikut ini contohnya:
+
+double a = 3.14;
+String hasil = String.valueOf(a);
+System.out.println(hasil);
+
+Selain untuk mengubah atau mengkonversikan tipe data menjadi tipe data lain dalam suatu variabel, casting juga dapat digunakan untuk mengkonversi kelas menjadi kelas lain. Untuk menkonversi kelas terdapat dua metode yaitu Upcasting dan Downcasting. Upcasting adalah casting dari subclass ke superclass sementara downcasting adalah casting dari superclass ke subclass.
+
+Hewan hewan2 = new Kucing();
+((Kucing) hewan2).meow(); //downcast hewan2 ke kucing, casting dari superclass ke subclass
+
