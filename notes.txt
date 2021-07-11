@@ -223,9 +223,7 @@ interface menggunakan Implements sedangkan Inheritance menggunakan extends.
 
 Sampai sini, Anda sudah paham perbedaan Inheritance dan Interface? Ingat saja kata kuncinya inheritance adalah abstraksi sedangkan interface adalah kontrak. Happy coding :) 
 
-Common class sendiri merupakan kelas yang sering atau umum digunakan dari pustaka standar Java tersebut.
-
-Berikut Common Class yang akan kita pelajari:
+Common class sendiri merupakan kelas yang sering atau umum digunakan dari pustaka standar Java tersebut. Berikut Common Class yang akan kita pelajari:
 
 1.Generic
 Generics pada Java memperbolehkan tipe (String, Integer, dll, serta user defined) bisa menjadi suatu parameter untuk metode, class dan interface. Generics juga berfungsi untuk type casting dan compile time safety.
@@ -237,3 +235,22 @@ Di Java sudah tersedia library untuk membaca input dari suatu berkas dan juga me
 Di Java sudah tersedia library yang khusus berurusan dengan waktu.
 5.Casting
 Mengubah suatu tipe data atau objek menjadi tipe data atau objek lainnya, akan menjadi mudah dengan menggunakan casting yang sudah tersedia di dalam Java.
+
+Suatu saat kode program kita akan menjadi besar, ribuan baris kode! Bayangkan jika kita tidak menggunakan type-parameter saat deklarasi objek Collection. Lalu objek tersebut digunakan di tempat lainnya, misal dikirim sebagai parameter ke suatu method. Bisa saja tanpa sadar kita memasukkan tipe objek yang salah dan baru akan ketahuan ketika program dijalankan. Pusing kan? Nah, gunakan type-parameter. Paling tidak kita akan terbantu karena masalah terdeteksi lebih dini saat compile.
+
+public static void print(Collection<Object> collection) 
+print(cp); // Apakah baris ini valid? tidak
+
+public static void print(Collection<?> collection)
+print(cp); // Baris ini valid
+
+Pada dasarnya ada 3 jenis exception berdasarkan kategorinya.
+1. Checked Exception, adalah exception yang terjadi saat compile time. Di sini programmer harus menambahkan kode untuk meng-handle exception kategori ini. Jika tidak di-handle maka kode yang dituliskan akan error dan tidak akan bisa dikompilasi. Contohnya adalah exception java.io.FileNotFoundException.
+2. Unchecked Exception, adalah exception yang terjadi saat execution time. Eror ini terjadi dalam lingkup internal dari aplikasi kita, biasanya terjadi karena salah penulisan kode atau penggunaan salah terhadap satu API. Contohnya adalah NullPointerException.
+3. Error, adalah exception yang diluar kendali user atau programmer. Eror ini terjadi di lingkup eksternal dari aplikasi kita. Ketika exception ini terjadi maka tidak ada yang bisa kita lakukan untuk mengatasinya, contohnya ketika perangkat kerasnya rusak saat kita ingin membaca data.
+
+Dari definisi di atas maka error exception dan unchecked exception termasuk dari exception yang berada pada execution time. Sebabnya, keduanya hanya dialami ketika program sudah berjalan. Perbedaanya adalah unchecked berada di dalam internal program kita, sedangkan error exception berada di eksternal program kita. Kemudian kode apa yang harus kita tambahkan untuk mengatasi berbagai macam exception tersebut? Kita harus kenal dengan 3 block kode yaitu try, catch, dan finally.
+
+Try-Catch 
+Kode yang rawan dengan exception kita masukkan ke dalam block try-catch. Kode yang kita masukkan ke dalam block try-catch biasa disebut sebagai protected code. Kodenya sepert ini.
+
