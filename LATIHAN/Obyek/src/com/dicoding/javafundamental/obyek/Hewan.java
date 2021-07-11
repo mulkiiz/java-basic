@@ -8,16 +8,15 @@ public class Hewan {
     // Ini merupakan konstruktor dari kelas hewan.
     // konstruktor adalah method yang pertama kali dijalankan ketika object diciptakan.
 
-    public Hewan (String namaHewan){
-        nama = namaHewan;
+    public void namaHewan(String namaHewan){
+        nama = namaHewan; //isi variabel diambil dari args voidnya
     }
-
     public void beratHewan(int beratHewan){
-        berat = beratHewan;
+        berat = beratHewan; //isi variabel diambil dari args voidnya
     }
 
     public  void jumlahKakiHewan(int jumlahKakiHewan){
-        jumlahKaki = jumlahKakiHewan;
+        jumlahKaki = jumlahKakiHewan; //isi variabel diambil dari args voidnya
     }
 
     public void cetakHewan(){
