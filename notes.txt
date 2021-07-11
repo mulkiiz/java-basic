@@ -266,3 +266,9 @@ Kelas yang memiliki spesifik method untuk mengkonversi waktu dan tanggal
 java.text.SimpleDateFormat
 Kelas yang membantu menterjemahkan format waktu dalam bentuk String ke format date time serta sebaliknya
 
+CurrentTimeMillis
+Merupakan method bagian dari kelas System yang menampilkan waktu sekarang dalam satuan milisecond (1000 milisecond = 1 second). CurrentTimeMillis() mengembalikan jumlah waktu mulai dari 1-1-1970 sampai dengan waktu yang sekarang. System.currentTimeMillis() biasanya digunakan untuk mengukur suatu waktu yang dibutuhkan dengan lebih spesifik. Ia biasa juga dipakai untuk tambahan sebagai variabel unik.
+
+Casting
+Sering kali kita ingin mengubah suatu tipe data tertentu ke bentuk tipe data lain dalam suatu variabel. Perubahan ini disebut dengan istilah casting. 
+
