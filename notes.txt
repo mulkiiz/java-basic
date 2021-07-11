@@ -78,3 +78,7 @@ Scanner
 Scanner merupakan kelas yang menyediakan fungsi-fungsi untuk membaca dan mengambil input dari pengguna. Scanner memiliki kemudahan yang dapat membaca teks, baik yang memiliki tipe data primitif maupun string.
 
 Control flow dalam bahasa Indonesia dapat diartikan sebagai aliran kendali. Maksud sebenarnya dari control flow adalah bagaimana urutan eksekusi perintah di dalam program.
+
+Case tanpa break akan menjalankan semua kode setelah case yang terpilih. Jadi dengan mengambil contoh kode di atas, dengan nilai inputan adalah char 'C', maka kode program akan masuk ke dalam case 'C'. Di dalamnya nilai variabel output akan ditambah dengan 1 karena pemanggilan operator ++. Dan karena tidak ada break maka program akan melanjutkan menjalankan case setelahnya yaitu case 'D', case 'E', dan default. Dan masing-masing di dalam case ada pemanggilan operator ++, sehingga nilai akhir dari output-nya adalah 4.
+
+Gunakanlah if-else ketika kondisinya merupakan range dari suatu nilai atau kondisi,. Sebabnya, karena if-else bisa menggunakan operator seperti > atau <. Sedangkan untuk  switch, gunakanlah ketika kondisinya hanya satu pilihan seperti integer, char, dan tipe lainnya.
